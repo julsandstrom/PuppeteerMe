@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import logo from "./assets/logo.svg";
+import puppetmaster from "./assets/puppetmaster-btn.svg";
+import stringpuller from "./assets/stringpuller-btn.svg";
+import wildcard from "./assets/thewildcard-btn.svg";
+
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+      <nav className="nav-container">
+        <img className="logo" src={logo} alt="puppeteer me logo" />
+      </nav>
+      <header className="header-container">
+        <p className="header-p-1">
+          Answer <span className="red-pop">5 questions</span> about someone you
+          know
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <p className="header-p-2">will your version of them match reality?</p>
+      </header>
+
+      <section className="category-container">
+        <h2 className="category-title">CATEGORY</h2>
+
+        <button className="puppetmaster-btn">
+          <img
+            className="puppetmaster-btn"
+            src={puppetmaster}
+            alt="puppetmaster button"
+          />
+        </button>
+        <p className="category-info-1">
+          How well do you <span className="red-pop">truly</span> understand
+          them?
+        </p>
+
+        <button className="stringpuller-btn">
+          <img
+            className="stringpuller-btn"
+            src={stringpuller}
+            alt="stringpuller button"
+          />
+        </button>
+        <p className="category-info-2">
+          What <span className="red-pop">role</span> do they play in social
+          settings?
+        </p>
+
+        <button className="wildcard-btn">
+          <img className="wildcard-btn" src={wildcard} alt="wildcard button" />
+        </button>
+        <p className="category-info-3">
+          What <span className="red-pop">surprises</span> lie beneath?
+        </p>
+      </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
