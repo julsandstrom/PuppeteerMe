@@ -3,11 +3,11 @@ import stringpuller from "/src/assets/stringpuller-btn.svg";
 import wildcard from "/src/assets/thewildcard-btn.svg";
 
 import "./App.css";
-
+const Background = "/images/background-mobile.png";
 function App() {
   const Logo = "svgs/logo-main.svg";
   return (
-    <>
+    <div style={{ backgroundImage: `url(${Background})`, height: "100vh" }}>
       <nav className="nav-container">
         <img className="logo" src={Logo} alt="puppeteer me logo" />
       </nav>
@@ -53,7 +53,7 @@ function App() {
           What <span className="red-pop">surprises</span> lie beneath?
         </p>
       </section>
-    </>
+    </div>
   );
 }
 
