@@ -1,4 +1,3 @@
-// import Logo from "/src/assets/logo.svg";
 import puppetmaster from "/src/assets/puppetmaster-btn.svg";
 import stringpuller from "/src/assets/stringpuller-btn.svg";
 import wildcard from "/src/assets/thewildcard-btn.svg";
@@ -6,7 +5,7 @@ import wildcard from "/src/assets/thewildcard-btn.svg";
 import "./App.css";
 
 function App() {
-  const Logo = "/public/logo.svg";
+  const Logo = "/public/logo-main.svg";
   return (
     <>
       <nav className="nav-container">
