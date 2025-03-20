@@ -5,7 +5,7 @@ import wildcard from "/src/assets/thewildcard-btn.svg";
 import "./App.css";
 
 function App() {
-  const Logo = "/public/logo-main.svg";
+  const Logo = "svgs/logo-main.svg";
   return (
     <>
       <nav className="nav-container">
