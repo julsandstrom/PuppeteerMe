@@ -1,8 +1,7 @@
-import { useState } from "react";
-import logo from "./assets/logo.svg";
-import puppetmaster from "./assets/puppetmaster-btn.svg";
-import stringpuller from "./assets/stringpuller-btn.svg";
-import wildcard from "./assets/thewildcard-btn.svg";
+import Logo from "/src/assets/logo.svg";
+import puppetmaster from "/src/assets/puppetmaster-btn.svg";
+import stringpuller from "/src/assets/stringpuller-btn.svg";
+import wildcard from "/src/assets/thewildcard-btn.svg";
 
 import "./App.css";
 
@@ -10,7 +9,7 @@ function App() {
   return (
     <>
       <nav className="nav-container">
-        <img className="logo" src={logo} alt="puppeteer me logo" />
+        <img className="logo" src={Logo} alt="puppeteer me logo" />
       </nav>
       <header className="header-container">
         <p className="header-p-1">
