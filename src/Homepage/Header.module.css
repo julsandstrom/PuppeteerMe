@@ -1,0 +1,22 @@
+.headerContainer {
+  margin: 0;
+  padding: 0;
+}
+.headerFirstP {
+  font-size: 1rem;
+  color: #ede0d4;
+  margin: 0;
+  padding: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.headerSecondP {
+  font-size: 0.8rem;
+  color: #ede0d4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.redPop {
+  color: #f45a5a;
+}

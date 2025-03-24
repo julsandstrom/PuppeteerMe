@@ -1,0 +1,120 @@
+button {
+  border: none;
+  background: none;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 0px 0px rgba(0, 0, 0, 0.25);
+}
+button:hover {
+}
+.categoryCard {
+  height: 80px;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+.backgroundQuiz {
+  min-height: 100vh;
+  background-image: url("/images/background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.hidden-image {
+  display: none;
+}
+.categoryTitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin-bottom: 200px;
+}
+.quizLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.questionContainer {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.question {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ede0d4;
+  max-width: 350px;
+}
+.btnWrap {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.sliderWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sliderTextWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+
+  color: #ede0d4;
+}
+.sliderText {
+  font-size: 1rem;
+  justify-self: flex-start;
+  text-align: left;
+  max-width: 100px;
+}
+.sliderTextTwo {
+  font-size: 1rem;
+
+  text-align: end;
+  max-width: 100px;
+}
+.buttonLeft {
+  font-weight: bold;
+  color: #343434;
+  background-color: #e9b86a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 10px 16px;
+}
+.buttonLeft:hover,
+.buttonMiddle:hover,
+.buttonRight:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+
+.buttonMiddle {
+  font-weight: bold;
+  color: #343434;
+  background-color: #e9b86a;
+}
+.buttonRight {
+  font-weight: bold;
+  color: #343434;
+  background-color: #e9b86a;
+}
+.summaryWrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70px;
+  padding-bottom: 50px;
+  margin-right: 100px;
+}
+.summaryBtn {
+  background-color: #e9b86a;
+  font-weight: bold;
+  color: #343434;
+  font-size: 1rem;
+}
+.active {
+  background-color: #ffffff;
+}

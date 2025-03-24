@@ -3,16 +3,30 @@
 html,
 body {
   font-family: "Playfair Display", serif;
-  /* background-image: url("images/background-mobile.png"); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
   margin: 0;
   padding: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  height: 100vh;
+  background-image: url("/images/background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.hidden-image {
+  display: none;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -20,9 +34,7 @@ p {
 button {
   font-family: "Playfair Display", serif;
 }
-button:hover {
-  cursor: pointer;
-}
+
 .nav-container {
   display: flex;
   justify-content: center;
@@ -31,96 +43,4 @@ button:hover {
 .logo {
   width: 200px;
   height: auto;
-}
-.header-container {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-
-  margin: 0;
-  padding: 0;
-}
-.header-p-1 {
-  font-size: 1rem;
-  color: #ede0d4;
-  margin: 0;
-  padding: 0px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.header-p-2 {
-  font-size: 0.8rem;
-  color: #ede0d4;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.red-pop {
-  color: #f45a5a;
-}
-.category-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  padding: 10px;
-}
-
-.category-info {
-  color: #ede0d4;
-  font-size: 14px;
-}
-
-.category-title {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-  color: #ede0d4;
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  font-size: 2rem;
-}
-.puppetmaster-btn {
-  width: fit-content;
-  background: none;
-  border: none;
-  grid-area: 2/1;
-
-  justify-self: flex-end;
-  height: 50px;
-}
-.stringpuller-btn {
-  grid-area: 3/1;
-  width: fit-content;
-  background: none;
-  border: none;
-  justify-self: flex-end;
-  height: 50px;
-}
-.wildcard-btn {
-  grid-area: 4/1;
-  width: fit-content;
-  background: none;
-  border: none;
-  justify-self: flex-end;
-  height: 50px;
-}
-.wildcard-btn:hover {
-  cursor: pointer;
-}
-.category-info-1 {
-  grid-area: 2/2;
-  color: #ede0d4;
-  font-size: 13px;
-}
-
-.category-info-2 {
-  grid-area: 3/2;
-  color: #ede0d4;
-  font-size: 13px;
-}
-
-.category-info-3 {
-  grid-area: 4/2;
-  color: #ede0d4;
-  font-size: 13px;
 }

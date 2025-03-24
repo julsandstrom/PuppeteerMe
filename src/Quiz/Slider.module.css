@@ -1,0 +1,72 @@
+.sliderWrapper {
+  /* position: relative; */
+  display: flex;
+  align-items: end;
+  /* justify-content: center; */
+  width: 340px;
+  height: 35px;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 40px 30px rgba(0, 0, 0, 0.5), 0 0px 0px rgba(0, 0, 0, 0.25);
+}
+.sliderWrapper:hover {
+  cursor: pointer;
+}
+.barOne {
+  height: 45px;
+  width: 85px;
+  background-color: #5b5a46;
+  border-radius: 2px 0 0 2px;
+}
+.barTwo {
+  height: 45px;
+  width: 85px;
+  background-color: #9d9474;
+  border-radius: 0 2px 0 2px 2px;
+}
+.barThree {
+  height: 45px;
+  width: 85px;
+  background-color: #e9b86a;
+  border-radius: 0;
+}
+.barFour {
+  height: 45px;
+  width: 85px;
+  background-color: #5b5a46;
+  border-radius: 0 2px 2px 0;
+}
+
+.barOne,
+.barTwo,
+.barThree,
+.barFour {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.barOne:hover,
+.barTwo:hover,
+.barThree:hover,
+.barFour:hover {
+  transform: scale(1.09);
+}
+
+.active {
+  border: 3px solid #e9e9e9;
+  border-radius: 2px;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.valueLabel {
+  font-size: 0.9rem;
+  color: #555;
+}
+.barOne,
+.barTwo,
+.barThree,
+.barFour {
+  flex: 0 0 auto;
+}

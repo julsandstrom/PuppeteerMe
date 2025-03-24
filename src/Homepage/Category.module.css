@@ -1,0 +1,64 @@
+.categoryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 10px;
+}
+
+.categoryTitle {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  color: #ede0d4;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-size: 2rem;
+}
+.puppetmasterBtn {
+  width: fit-content;
+  background: none;
+  border: none;
+  grid-area: 2/1;
+
+  justify-self: flex-end;
+  height: 50px;
+}
+.stringpullerBtn {
+  grid-area: 3/1;
+  width: fit-content;
+  background: none;
+  border: none;
+  justify-self: flex-end;
+  height: 50px;
+}
+.wildcardBtn {
+  grid-area: 4/1;
+  width: fit-content;
+  background: none;
+  border: none;
+  justify-self: flex-end;
+  height: 50px;
+}
+.wildcardBtn:hover {
+  cursor: pointer;
+}
+.categoryInfoMaster {
+  grid-area: 2/2;
+  color: #ede0d4;
+  font-size: 13px;
+}
+
+.categoryInfoPuller {
+  grid-area: 3/2;
+  color: #ede0d4;
+  font-size: 13px;
+}
+
+.categoryInfoWild {
+  grid-area: 4/2;
+  color: #ede0d4;
+  font-size: 13px;
+}
+.redPop {
+  color: #f45a5a;
+}
