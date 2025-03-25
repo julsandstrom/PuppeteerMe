@@ -67,7 +67,11 @@ const Category = () => {
         className={styles.puppetmasterBtn}
         onClick={() => handleClick("puppetmaster")}
       >
-        <img src={puppetmaster} alt="puppetmaster button" />
+        <img
+          className={styles.puppetmasterLogo}
+          src={puppetmaster}
+          alt="puppetmaster button"
+        />
       </button>
       <p className={styles.categoryInfoMaster}>
         How well do you <span className={styles.redPop}>truly</span> understand
@@ -78,7 +82,11 @@ const Category = () => {
         className={styles.stringpullerBtn}
         onClick={() => handleClick("stringpuller")}
       >
-        <img src={stringpuller} alt="stringpuller button" />
+        <img
+          className={styles.stringpullerLogo}
+          src={stringpuller}
+          alt="stringpuller button"
+        />
       </button>
       <p className={styles.categoryInfoPuller}>
         What <span className={styles.redPop}>role</span> do they play in social
@@ -89,7 +97,11 @@ const Category = () => {
         className={styles.wildcardBtn}
         onClick={() => handleClick("wildcard")}
       >
-        <img src={wildcard} alt="wildcard button" />
+        <img
+          className={styles.wildcardLogo}
+          src={wildcard}
+          alt="wildcard button"
+        />
       </button>
       <p className={styles.categoryInfoWild}>
         What <span className={styles.redPop}>surprises</span> lie beneath?

@@ -1,9 +1,9 @@
-const Logo = "/svgs/logo-main.svg";
+import Logo from "/svgs/logo-main.svg?raw";
 
 const Puppet = () => {
   return (
-    <nav className="nav-container">
-      <img className="logo" src={Logo} alt="puppeteer me logo" />
+    <nav className="nav-container ">
+      <div dangerouslySetInnerHTML={{ __html: Logo }} />
     </nav>
   );
 };
