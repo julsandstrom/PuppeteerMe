@@ -1,38 +1,41 @@
 export const stringpullerQuestions = [
   {
-    id: "control",
-    type: "slider",
-    question: "How much does Sawan enjoy being in control of situations?",
-    leftText: "Prefers to observe",
-    rightText: "Always pulling strings",
-  },
-  {
-    id: "adaptability",
-    type: "threeButton",
-    question: "How easily does Sawan adapt when things don’t go as planned?",
-    leftText: "Prefers stability",
-    middleText: "Needs time",
-    rightText: "Thrives on change",
-  },
-  {
-    id: "risk",
+    id: "fitin",
     type: "twoButton",
-    question: "How often does Sawan take risks in life?",
-    leftText: "Plays it safe",
-    rightText: "Loves taking risks",
+    question:
+      "Has {{name}} ever laughed at a joke they didn’t understand just to fit in?",
+    leftText: "Only when it's real",
+    rightText: "Goes along to belong",
   },
   {
-    id: "planning",
+    id: "teamwork",
     type: "slider",
-    question: "How much does Sawan plan ahead vs. act in the moment?",
-    leftText: "Lives in the moment",
-    rightText: "Every move is calculated",
+    question: "Does {{name}} prefer working alone over being in a team?",
+    leftText: "Thrives solo",
+    rightText: "Team player all the way",
   },
   {
-    id: "predictability",
+    id: "boundaries",
+    type: "threeButton",
+    question: "Does {{name}} struggle to say 'no' even when they want to?",
+    leftText: "No problem saying no",
+    middleText: "Depends on who's asking",
+    rightText: "Says yes too often",
+  },
+  {
+    id: "openness",
+    type: "twoButton",
+    question:
+      "If {{name}} is struggling with something, do they share it… or keep it to themselves?",
+    leftText: "Keeps it inside",
+    rightText: "Talks it out",
+  },
+  {
+    id: "recharge",
     type: "slider",
-    question: "How predictable is Sawan in their actions and decisions?",
-    leftText: "Always Unpredictable",
-    rightText: "Completely Consistent",
+    question:
+      "Does {{name}} need time to recharge after socializing, even if they had fun?",
+    leftText: "Energized by people",
+    rightText: "Needs solo recovery",
   },
 ];

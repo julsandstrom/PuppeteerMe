@@ -3,7 +3,7 @@ button {
   background: none;
   border-radius: 2px;
   font-size: 0.8rem;
-  width: 100px;
+  width: 110px;
   height: 80px;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -56,7 +56,7 @@ button:hover {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 .sliderWrap {
   display: flex;
@@ -85,8 +85,8 @@ button:hover {
 }
 .buttonLeft {
   font-weight: bold;
-  color: #343434;
-  background-color: #e9b86a;
+  color: #dfdfdf;
+  background: linear-gradient(to bottom, #f45a5a 0%, #f45a5a 60%, #973d3d 100%);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   padding: 10px 16px;
 }
@@ -99,13 +99,18 @@ button:hover {
 
 .buttonMiddle {
   font-weight: bold;
-  color: #343434;
-  background-color: #e9b86a;
+  color: #dfdfdf;
+  background: linear-gradient(to bottom, #c1288d 0%, #c1288d 60%, #5f1b31 100%);
 }
 .buttonRight {
   font-weight: bold;
-  color: #343434;
-  background-color: #e9b86a;
+  color: #dfdfdf;
+  background: linear-gradient(
+    to bottom,
+    #9f1fc3 0%,
+    #9f1fc3 60%,
+    rgb(60, 11, 73) 100%
+  );
 }
 .summaryWrap {
   display: flex;
@@ -114,12 +119,14 @@ button:hover {
   padding-bottom: 50px;
 }
 .summaryBtn {
-  background-color: #ffffff;
+  background-color: #ede0d4;
   height: 50px;
   font-weight: bold;
   color: #343434;
   font-size: 1rem;
 }
 .active {
-  background-color: #ffffff;
+  background: none;
+  background-color: #ede0d4;
+  color: #343434;
 }

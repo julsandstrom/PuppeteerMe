@@ -43,6 +43,9 @@ const SummaryPage = () => {
       </div>
       <p className={styles.summaryText}>{summaryText}</p>
       <img className={styles.summaryStage} src={summaryStage} alt="spotlight" />
+      <h3 className={styles.dailyInfo}>
+        Come back tomorrow to see what new questions are up.
+      </h3>
       <button onClick={resetQuiz} className={styles.startOverBtn}>
         Exit Stage
       </button>

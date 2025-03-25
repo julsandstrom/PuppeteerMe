@@ -32,6 +32,12 @@
   margin-top: 0px;
   padding-bottom: 150px;
 }
+.dailyInfo {
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 200;
+}
 .startOverBtn {
   margin: 20px;
   text-align: center;
