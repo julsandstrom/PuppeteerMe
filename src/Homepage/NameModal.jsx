@@ -14,7 +14,9 @@ function NameModal() {
   return (
     <form onSubmit={handleSubmit}>
       <input name="name" type="text" placeholder="Enter name" />
-      <button type="submit">Start</button>
+      <button type="submit" className="name-modal">
+        Enter Stage
+      </button>
     </form>
   );
 }

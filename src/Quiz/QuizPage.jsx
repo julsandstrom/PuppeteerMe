@@ -1,5 +1,6 @@
-const QuizBackground = "/images/backgroundquiz.png";
-import puppetmaster from "/src/assets/puppetmaster-btn.svg";
+import puppetmaster from "/src/assets/puppetmaster-category.svg";
+import stringpuller from "/src/assets/stringpuller-category.svg";
+import wildcard from "/src/assets/wildcard-category.svg";
 import styles from "./Quiz.module.css";
 import QuestionSlider from "./QuestionSlider";
 import QuestionThreeButton from "./QuestionThreeButton";
@@ -8,12 +9,13 @@ import usePuppeteerStore from "/src/store/puppeteerStore.js";
 
 import { useEffect } from "react";
 const PuppetMasterQuiz = () => {
-  const { setStage, quizQuestions, generateQuiz, category } =
+  const { setStage, quizQuestions, generateQuiz, category, name, resetQuiz } =
     usePuppeteerStore();
 
   useEffect(() => {
     if (category) {
       generateQuiz(category);
+      console.log(category);
     }
   }, [category]);
 
@@ -22,16 +24,31 @@ const PuppetMasterQuiz = () => {
     twoButton: QuestionTwoButton,
     threeButton: QuestionThreeButton,
   };
+  const categoryLogos = {
+    puppetmaster: puppetmaster,
+    stringpuller: stringpuller,
+    wildcard: wildcard,
+  };
+
+  const insertName = (text, name) => {
+    return text.replace(/{{name}}/gi, name || "they");
+  };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
-    <div className={styles.backgroundQuiz}>
-      <img src={QuizBackground} className="hidden-image" alt="hidden" />
+    <div>
       <div className={styles.categoryTitle}>
         <img
           className={styles.categoryCard}
-          src={puppetmaster}
-          alt="puppet master button"
+          src={categoryLogos[category] || puppetmaster}
+          alt={`${category} button`}
         />{" "}
+        <button className={styles.exitStage} onClick={resetQuiz}>
+          Exit Stage
+        </button>
       </div>
       <div className={styles.quizLayout}>
         {quizQuestions.map((q) => {
@@ -41,7 +58,7 @@ const PuppetMasterQuiz = () => {
             <Component
               key={q.id}
               questionId={q.id}
-              question={q.question}
+              question={insertName(q.question, name)}
               leftText={q.leftText}
               middleText={q.middleText}
               rightText={q.rightText}

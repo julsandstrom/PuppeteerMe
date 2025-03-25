@@ -11,26 +11,30 @@ button {
 }
 button:hover {
 }
-.categoryCard {
-  height: 80px;
-  align-self: flex-start;
-  justify-self: flex-start;
+
+.highlighted-name {
+  background: linear-gradient(to right, #ff5c5c, #ff9d00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
-.backgroundQuiz {
-  min-height: 100vh;
-  background-image: url("/images/background-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-.hidden-image {
-  display: none;
-}
+
 .categoryTitle {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 40px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
+  gap: 20px;
+}
+.categoryCard {
+  height: 100px;
+}
+.exitStage {
+  width: 90px;
+  height: 30px;
+  background-color: #ede0d4;
 }
 .quizLayout {
   display: flex;
@@ -60,9 +64,10 @@ button:hover {
   margin-top: 20px;
 }
 .sliderTextWrap {
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
-  gap: 120px;
+  gap: 100px;
 
   color: #ede0d4;
 }
@@ -70,13 +75,13 @@ button:hover {
   font-size: 1rem;
   justify-self: flex-start;
   text-align: left;
-  max-width: 100px;
+  max-width: 110px;
 }
 .sliderTextTwo {
   font-size: 1rem;
 
   text-align: end;
-  max-width: 100px;
+  max-width: 110px;
 }
 .buttonLeft {
   font-weight: bold;
@@ -104,13 +109,13 @@ button:hover {
 }
 .summaryWrap {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 70px;
+  justify-content: center;
+  margin-top: 100px;
   padding-bottom: 50px;
-  margin-right: 100px;
 }
 .summaryBtn {
-  background-color: #e9b86a;
+  background-color: #ffffff;
+  height: 50px;
   font-weight: bold;
   color: #343434;
   font-size: 1rem;

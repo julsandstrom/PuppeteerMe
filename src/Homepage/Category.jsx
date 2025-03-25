@@ -1,19 +1,68 @@
 import puppetmaster from "/src/assets/puppetmaster-btn.svg";
 import stringpuller from "/src/assets/stringpuller-btn.svg";
-import wildcard from "/src/assets/thewildcard-btn.svg";
+import wildcard from "/src/assets/wildcard-btn.svg";
 import styles from "./Category.module.css";
 import usePuppeteerStore from "../store/puppeteerStore";
+import { useState } from "react";
 const Category = () => {
-  const { setCategory, setStage } = usePuppeteerStore();
+  const [showModal, setShowModal] = useState(false);
+
+  const [tempCategory, setTempCategory] = useState(null);
+  const [nameInput, setNameInput] = useState("");
+  const { setCategory, setStage, setName, resetQuiz } = usePuppeteerStore();
+
   const handleClick = (category) => {
-    setCategory(category);
+    setTempCategory(category);
+    setShowModal(true);
+  };
+
+  const handleSaveName = (e) => {
+    e.preventDefault();
+    if (!nameInput) return;
+
+    setName(nameInput);
+    setCategory(tempCategory);
     setStage("quiz");
+    setShowModal(false);
+    setNameInput("");
   };
 
   return (
     <section className={styles.categoryContainer}>
       <h2 className={styles.categoryTitle}>CATEGORY</h2>
-
+      {showModal && (
+        <form className={styles.nameForm}>
+          <input
+            type="text"
+            placeholder="Enter their name"
+            value={nameInput}
+            onChange={(e) => setNameInput(e.target.value)}
+            className={styles.nameInput}
+          />
+          <div className={styles.formBtnWrap}>
+            {" "}
+            <button
+              type="button"
+              className={styles.backBtn}
+              onClick={() => {
+                resetQuiz();
+                setShowModal(false);
+                setTempCategory(null);
+                setNameInput("");
+              }}
+            >
+              Back
+            </button>
+            <button
+              type="submit"
+              className={styles.enterStageBtn}
+              onClick={handleSaveName}
+            >
+              Enter Stage
+            </button>
+          </div>
+        </form>
+      )}
       <button
         className={styles.puppetmasterBtn}
         onClick={() => handleClick("puppetmaster")}

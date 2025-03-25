@@ -16,13 +16,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-.background {
-  height: 100vh;
-  background-image: url("/images/background-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
+
 .hidden-image {
   display: none;
 }
@@ -39,8 +33,24 @@ button {
   display: flex;
   justify-content: center;
   height: 35vh;
+
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 .logo {
-  width: 200px;
+  width: 350px;
   height: auto;
+}
+
+.footer {
+  margin-top: 200px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+.projectBy {
+  color: white;
+  text-align: center;
+}
+.pop-color {
+  color: #f45a5a;
 }

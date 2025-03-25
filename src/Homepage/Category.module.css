@@ -1,7 +1,7 @@
 .categoryContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 80px;
   padding: 10px;
 }
 
@@ -45,7 +45,7 @@
 .categoryInfoMaster {
   grid-area: 2/2;
   color: #ede0d4;
-  font-size: 13px;
+  font-size: 1.1rem;
 }
 
 .categoryInfoPuller {
@@ -61,4 +61,53 @@
 }
 .redPop {
   color: #f45a5a;
+}
+.nameForm {
+  z-index: 1000;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0px;
+  background: linear-gradient(to bottom, #a1283d, #480914);
+
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+.nameInput {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+  height: 40px;
+  font-size: 1rem;
+  padding-left: 5px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+.formBtnWrap {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.enterStageBtn {
+  background-color: #3a7d7d;
+  color: white;
+  font-size: 1.2rem;
+  height: 50px;
+  width: 120px;
+}
+.backBtn {
+  background-color: #ede0d4;
+  color: rgb(15, 15, 15);
+  font-size: 1.2rem;
+  height: 50px;
+  width: 120px;
 }

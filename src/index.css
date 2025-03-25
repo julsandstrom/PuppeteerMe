@@ -6,6 +6,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #070309 0%, #0e060f 20%, #140c17 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 /* a {
   font-weight: 500;

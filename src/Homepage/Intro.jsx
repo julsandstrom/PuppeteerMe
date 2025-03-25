@@ -1,14 +1,18 @@
 import Puppet from "./Puppet";
 import Header from "./Header";
 import Category from "./Category";
-const Background = "/images/background-mobile.png";
+
 const Intro = () => {
   return (
-    <div className="background">
-      <img src={Background} className="hidden-image" alt="hidden" />
+    <div>
       <Puppet />
       <Header />
       <Category />
+      <section className="footer">
+        <h6 className="projectBy">
+          <span className="pop-color">Project by</span> <br /> Julian Sandstrom
+        </h6>
+      </section>
     </div>
   );
 };

@@ -28,13 +28,13 @@
 .barThree {
   height: 45px;
   width: 85px;
-  background-color: #e9b86a;
+  background-color: #c09857;
   border-radius: 0;
 }
 .barFour {
   height: 45px;
   width: 85px;
-  background-color: #5b5a46;
+  background-color: #e9b86a;
   border-radius: 0 2px 2px 0;
 }
 

@@ -1,6 +1,8 @@
 import usePuppeteerStore from "/src/store/puppeteerStore";
 import { traits } from "/src/data/traits.js";
 import { questionsByCategory } from "/src/data/index.js";
+import styles from "./Summary.module.css";
+import { useEffect } from "react";
 
 const SummaryPage = () => {
   const { name, category, answers, resetQuiz } = usePuppeteerStore();
@@ -16,12 +18,14 @@ const SummaryPage = () => {
 
   const summaryText = `${name || "They"} ${summaryFragments.join(", ")}.`;
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
-    <div style={{ padding: "2rem" }}>
-      <h2>Summary</h2>
-      <p style={{ fontSize: "1.2rem", lineHeight: "1.5" }}>{summaryText}</p>
-      <button onClick={resetQuiz} style={{ marginTop: "2rem" }}>
-        Start Over
+    <div className={styles.summaryContainer}>
+      <p className={styles.summaryText}>{summaryText}</p>
+      <button onClick={resetQuiz} className={styles.startOverBtn}>
+        Exit Stage
       </button>
     </div>
   );
