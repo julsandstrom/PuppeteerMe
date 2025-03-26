@@ -74,6 +74,7 @@ const PuppetMasterQuiz = () => {
           Summary
         </button>
       </div>
+      console.log('Loaded questions:', questions);
     </div>
   );
 };

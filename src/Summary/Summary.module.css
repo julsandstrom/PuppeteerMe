@@ -25,6 +25,13 @@
   text-align: center;
   color: #ede0d4;
 }
+.summaryText p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .summaryStage {
   width: 300px;
   justify-self: flex-end;

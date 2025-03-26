@@ -1,18 +1,11 @@
 export const stringpullerQuestions = [
   {
     id: "fitin",
-    type: "twoButton",
+    type: "slider",
     question:
       "Has {{name}} ever laughed at a joke they didn’t understand just to fit in?",
-    leftText: "Only when it's real",
+    leftText: "Stone-faced till it's funny",
     rightText: "Goes along to belong",
-  },
-  {
-    id: "teamwork",
-    type: "slider",
-    question: "Does {{name}} prefer working alone over being in a team?",
-    leftText: "Thrives solo",
-    rightText: "Team player all the way",
   },
   {
     id: "boundaries",
@@ -23,8 +16,15 @@ export const stringpullerQuestions = [
     rightText: "Says yes too often",
   },
   {
-    id: "openness",
+    id: "teamwork",
     type: "twoButton",
+    question: "Does {{name}} prefer working alone over being in a team?",
+    leftText: "Thrives solo",
+    rightText: "Team player all the way",
+  },
+  {
+    id: "openness",
+    type: "slider",
     question:
       "If {{name}} is struggling with something, do they share it… or keep it to themselves?",
     leftText: "Keeps it inside",

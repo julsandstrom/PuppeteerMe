@@ -7,9 +7,8 @@ export const traits = {
   ],
   adaptability: [
     "resists change like a cat resists bath time",
-    "needs a minute (or twelve) to recalibrate",
-    "does fine after a brief internal crisis",
-    "thrives in chaos — might even cause some for fun",
+    "needs a minute (or twelve) to recalibrate when things go off-script",
+    "adjusts quickly — sometimes even enjoys the chaos",
   ],
   risk: [
     "plays it so safe you’d think life came with bubble wrap",
@@ -19,7 +18,7 @@ export const traits = {
     "just vibes through life and hopes for the best",
     "plans... a little, but keeps room for chaos",
     "thinks before acting — most of the time",
-    "has color-coded spreadsheets for brunch plans — and that's not a joke",
+    "has a plan, a backup plan, and a backup for the backup",
   ],
   predictability: [
     "is pure wildcard energy — even they don’t know what’s next",
@@ -28,25 +27,22 @@ export const traits = {
     "is so consistent they probably dream in bullet points",
   ],
   fitin: [
-    "marches to their own drum — even if it’s offbeat",
-    "occasionally nods along just to avoid starting something",
+    "refuses to fake it — even if no one laughs",
+    "stays quiet but smiles politely to keep the peace",
     "fakes a laugh here and there — who doesn’t?",
     "has mastered the fine art of blending in with flair",
   ],
   teamwork: [
     "prefers to fly solo — less drama, more control",
-    "can team up... as long as it’s temporary",
     "enjoys bouncing ideas around like an enthusiastic golden retriever",
-    "was probably born leading a group project",
   ],
   boundaries: [
-    "says 'no' like a pro — no guilt, no explanation",
-    "hesitates, then caves (but with dignity)",
-    "says yes while screaming internally",
-    "basically lives in 'sure, no problem!' mode",
+    "says 'no' like a pro — no guilt and no explanation",
+    "hesitates to say no, then caves (but with dignity)",
+    "says yes to everything while screaming internally",
   ],
   openness: [
-    "emotional lockbox — good luck cracking it",
+    "is an emotional lockbox —  and you don’t have the key",
     "shares just enough to keep people guessing",
     "lets a little out once it feels safe (or caffeinated)",
     "puts it all on the table — tissues not included",
@@ -58,28 +54,32 @@ export const traits = {
     "recharges in total silence — ideally under a blanket",
   ],
   zombie: [
-    "would hide under a table and hope for the best",
-    "sticks with the group and lets someone else make the plans",
-    "leads the charge, probably with a frying pan and zero hesitation",
+    "would hide under a table during a zombie invasion and hope for the best",
+    "would, in a zombie apocalypse, run, trip, scream… but still make it out alive",
+    "would stick with the group and let someone else make the zombie survival plan",
+    "would lead the charge in a zombie attack — probably with a frying pan and zero hesitation",
   ],
+
   secrets: [
     "would spill the tea accidentally — oops",
     "usually trustworthy… depending on the secret",
-    "could guard government files and *still* sleep at night",
+    "keeps secrets... but you’ll see it in their face",
+    "could guard government files and still sleep at night",
   ],
   competitive: [
-    "couldn’t care less — unless snacks are involved",
-    "acts chill but is 100% keeping score",
+    "approaches every challenge with a smile — winning’s optional",
+    "joins for fun — but lowkey wants to win",
+    "gets a little too into it once the stakes are real",
     "treats every game like it’s the world championship",
   ],
   moviegenre: [
     "is indie drama energy — slow burn, big feelings, niche soundtrack",
     "is action-comedy chaos with a soft center",
-    "is full-blown psychological thriller — keep guessing",
+    "is full-blown psychological thriller — good luck guessing what’s next",
   ],
-  leadership: [
-    "is happy to follow — as long as someone else decides",
-    "can lead... reluctantly, with a sigh",
-    "takes charge like it’s a destiny written in glitter",
+  timemachine: [
+    "would’ve thrived in the Stone Age — rough hands, big instincts, no nonsense",
+    "was born for the Middle Ages — dramatic entrances, castle politics, and maybe a sword",
+    "clearly belongs in the future — think neon cities, robot sidekicks, and life on Mars",
   ],
 };
