@@ -15,7 +15,7 @@ const QuestionTwoButton = ({ questionId, question, leftText, rightText }) => {
           }`}
           onClick={() => setAnswer(questionId, 0)}
         >
-          {leftText}
+          <span className={styles.buttonText}>{leftText}</span>
         </button>
         <button
           className={`${styles.buttonRight} ${
@@ -23,7 +23,7 @@ const QuestionTwoButton = ({ questionId, question, leftText, rightText }) => {
           }`}
           onClick={() => setAnswer(questionId, 1)}
         >
-          {rightText}
+          <span className={styles.buttonText}>{rightText}</span>
         </button>
       </div>
     </div>
