@@ -18,13 +18,6 @@
 .categoryCard {
   height: 100px;
 }
-.summaryText {
-  line-height: 1.5;
-  font-size: 1.3rem;
-
-  text-align: center;
-  color: #ede0d4;
-}
 .summaryText p {
   margin: 0.5rem 0;
   font-size: 1.2rem;
@@ -34,13 +27,14 @@
 
 .summaryStage {
   width: 300px;
-  justify-self: flex-end;
-  align-self: flex-end;
+  justify-self: center;
+  align-self: center;
   margin-top: 0px;
   padding-bottom: 150px;
+  margin-left: 70px;
 }
 .dailyInfo {
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
   padding-bottom: 20px;
   font-weight: 200;
@@ -53,4 +47,39 @@
   height: 50px;
   font-size: 1rem;
   background-color: #d9d9d9;
+}
+@media (min-width: 600px) {
+  .categoryCard {
+    height: 140px;
+  }
+  .summaryText p {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .summaryStage {
+    width: 500px;
+
+    margin-top: 30px;
+    padding-bottom: 150px;
+  }
+}
+@media (min-width: 600px) {
+  .categoryCard {
+    height: 180px;
+  }
+  .summaryText p {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 800px;
+  }
+  .summaryStage {
+    width: 500px;
+
+    margin-top: 30px;
+    padding-bottom: 150px;
+  }
 }

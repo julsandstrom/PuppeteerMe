@@ -22,3 +22,11 @@
 .redPop {
   color: #f45a5a;
 }
+@media (min-width: 600px) {
+  .headerFirstP {
+    font-size: 2rem;
+  }
+  .headerSecondP {
+    font-size: 1.5rem;
+  }
+}

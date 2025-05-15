@@ -10,11 +10,11 @@ import SummaryPage from "./Summary/SummaryPage.jsx";
 function App() {
   const stage = usePuppeteerStore((state) => state.currentStage);
   return (
-    <MobileOnly>
+    <>
       {stage === "intro" && <Intro />}
       {stage === "quiz" && <QuizPage />}
       {stage === "summary" && <SummaryPage />}
-    </MobileOnly>
+    </>
   );
 }
 

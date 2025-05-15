@@ -2,14 +2,12 @@ button {
   border: none;
   background: none;
   border-radius: 2px;
-  font-size: 0.8rem;
+
   width: 110px;
   height: 80px;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 0px 0px rgba(0, 0, 0, 0.25);
-}
-button:hover {
 }
 
 .highlighted-name {
@@ -136,4 +134,83 @@ button:hover {
   background: none;
   background-color: #ede0d4;
   color: #343434;
+}
+@media (min-width: 600px) {
+  .questionContainer {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  .categoryCard {
+    height: 150px;
+  }
+  .question {
+    font-size: 1.8rem;
+    max-width: 520px;
+    margin-bottom: 30px;
+  }
+  .exitStage {
+    width: 120px;
+    height: 50px;
+    background-color: #ede0d4;
+    font-size: 1.4rem;
+  }
+  .sliderTextWrap {
+    gap: 160px;
+  }
+  .sliderText,
+  .sliderTextTwo {
+    font-size: 1.2rem;
+
+    max-width: 130px;
+  }
+  button {
+    width: 140px;
+    height: 100px;
+  }
+  .buttonText {
+    font-size: 1.3rem;
+  }
+  .summaryBtn {
+    height: 60px;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1000px) {
+  .questionContainer {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  .categoryCard {
+    height: 190px;
+  }
+  .question {
+    font-size: 2.5rem;
+    max-width: 520px;
+  }
+  .exitStage {
+    width: 120px;
+    height: 50px;
+    background-color: #ede0d4;
+    font-size: 1.4rem;
+  }
+  .sliderTextWrap {
+    gap: 200px;
+  }
+  .sliderText,
+  .sliderTextTwo {
+    font-size: 1.7rem;
+
+    max-width: 190px;
+  }
+  button {
+    width: 180px;
+    height: 140px;
+  }
+  .buttonText {
+    font-size: 1.5rem;
+  }
+  .summaryBtn {
+    height: 60px;
+    font-size: 1.3rem;
+  }
 }
