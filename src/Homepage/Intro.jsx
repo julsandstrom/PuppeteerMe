@@ -13,9 +13,9 @@ const Intro = () => {
         only.
       </h3> */}
       <section className="footer">
-        <h6 className="projectBy">
+        {/* <h6 className="projectBy">
           <span className="pop-color">Project by</span> <br /> Julian Sandstrom
-        </h6>
+        </h6> */}
       </section>
     </div>
   );
